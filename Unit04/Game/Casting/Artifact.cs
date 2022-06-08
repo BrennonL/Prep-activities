@@ -1,5 +1,7 @@
 namespace Unit04.Game.Casting
 {
+    public class Artifact : Actor
+    {
     // TODO: Implement the Artifact class here
 
     // 1) Add the class declaration. Use the following class comment. Make sure you
@@ -12,6 +14,8 @@ namespace Unit04.Game.Casting
         /// </para>
         /// </summary>
 
+        private string message = "";
+
 
     // 2) Create the class constructor. Use the following method comment.
         
@@ -19,6 +23,10 @@ namespace Unit04.Game.Casting
         /// Constructs a new instance of Artifact.
         /// </summary>
        
+        public Artifact()
+        {
+
+        }
 
     // 3) Create the GetMessage() method. Use the following method comment.
         
@@ -26,6 +34,13 @@ namespace Unit04.Game.Casting
         /// Gets the artifact's message.
         /// </summary>
         /// <returns>The message as a string.</returns>
+
+        public string GetMessage()
+        {
+
+            
+            return message;
+        }
         
 
     // 4) Create the SetMessage(string message) method. Use the following method comment.
@@ -34,5 +49,12 @@ namespace Unit04.Game.Casting
         /// Sets the artifact's message to the given value.
         /// </summary>
         /// <param name="message">The given message.</param>
+
+        public void SetMessage(string message)
+        {
+            this.message = message; 
+
+        }
+    }
     
 }
